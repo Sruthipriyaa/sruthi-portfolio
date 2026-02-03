@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
 import {
   Box, Typography, Button, Chip, Grid, Avatar, Card, CardContent,
-  List, ListItem, ListItemText, Stack, Switch, FormControlLabel,
-  IconButton, Divider, useTheme, Tooltip
+  List, ListItem, ListItemText, Stack,
+  IconButton, Divider, Tooltip
 } from '@mui/material';
-import { Brightness4, Brightness7, Email, Phone, LinkedIn, GitHub, ArrowForward } from '@mui/icons-material';
+
+import { Brightness4, Brightness7, Email, Phone, LinkedIn, ArrowForward } from '@mui/icons-material';
 import CodeIcon from '@mui/icons-material/Code';
 import BuildIcon from '@mui/icons-material/Build';
 import ComputerIcon from '@mui/icons-material/Computer';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 
+
 function App() {
   const [darkMode, setDarkMode] = useState(true); // Default dark for modern feel
 
-  const theme = useTheme();
   const isDark = darkMode;
 
   const customTheme = {
